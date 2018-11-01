@@ -25,9 +25,15 @@ function deleteTarget(){
             this.closest("li").remove(); 
         }); 
 }
+function checkTarget(){
+    $('li').on('click', function(event){
+          
+        $(this).closest('li').children().first().toggleClass('shopping-item__checked');
+        }); 
+}
 
 
        
-
+$(checkTarget); 
 $(deleteTarget); 
 $(clickHandle); 
