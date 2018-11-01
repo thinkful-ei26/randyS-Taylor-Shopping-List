@@ -21,10 +21,6 @@ function clickHandle(){
 console.log('hi');  
 // make the delete event function
 function deleteTarget(){
-    $('.shopping-item-delete').on('click',function(){
-            $(this).closest("li").remove(); 
-           });
-
     $("ul").on('click', '.shopping-item-delete', function(event){
             this.closest("li").remove(); 
         }); 
